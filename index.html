@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Papel, Papel, Tijera</title>
+</head>
+
+<body>
+    <h1 id="title">Piedra, Papel o Tijera</h1>
+    <p>Hola Humano</p>
+
+    <button onclick="playGame('Piedra')" class="move-button">
+        <img src="img/piedra-emoji.png" alt="Piedra" class="move-icon">
+    </button>
+    <button onclick="playGame('Papel')" class="move-button">
+        <img src="img/papel-emoji.png" alt="Papel" class="move-icon">
+    </button>
+    <button onclick="playGame('Tijera')" class="move-button">
+        <img src="img/tijera-emoji.png" alt="Tijera" class="move-icon">
+    </button>
+
+
+
+    <p class="js-result result"></p>
+    <p class="moves"></p>
+    <div class="js-score score">wins: 0, losses: 0, ties: 0</div>
+    <script src="app.js"></script>
+</body>
+
+</html>
