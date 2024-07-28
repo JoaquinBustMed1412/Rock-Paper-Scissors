@@ -2,11 +2,11 @@ function pickComputerOption() {
     let computerOption = ''
     let numeroAleatorio = Math.random()
     if (numeroAleatorio >= 0 && numeroAleatorio < 1 / 3) {
-        computerOption = 'Piedra'
+        computerOption = 'piedra'
     } else if (numeroAleatorio >= 1 / 3 && numeroAleatorio < 2 / 3) {
-        computerOption = 'Papel'
+        computerOption = 'papel'
     } else if (numeroAleatorio >= 2 / 3 && numeroAleatorio < 1) {
-        computerOption = 'Tijera'
+        computerOption = 'tijera'
     }
     return computerOption;
 }
@@ -15,34 +15,34 @@ function playGame(playerMove) {
     let computerOption = pickComputerOption()
     let resultado = ''
     //Lógica de juego cuando elige PIEDRA:
-    if(playerMove === 'Piedra') {
-        if(computerOption === 'Piedra') {
+    if(playerMove === 'piedra') {
+        if(computerOption === 'piedra') {
             resultado = "Tie"
-        } else if (computerOption === 'Papel') {
+        } else if (computerOption === 'papel') {
             resultado = "You lose"
-        } else if (computerOption === 'Tijera') {
+        } else if (computerOption === 'tijera') {
             resultado = "YOU WIN"
         }
     }
 
     //Lógica del juego cuando elige PAPEL:
-    else if(playerMove === 'Papel') {
-        if (computerOption === 'Piedra') {
+    else if(playerMove === 'papel') {
+        if (computerOption === 'piedra') {
             resultado = "YOU WIN"
-        } else if (computerOption === 'Papel') {
+        } else if (computerOption === 'papel') {
             resultado = "Tie"
-        } else if (computerOption === 'Tijera') {
+        } else if (computerOption === 'tijera') {
             resultado = "You lose"
         }
     }
 
     //Lógica del juego cuando elige TIJERA:
-    else if(playerMove === 'Tijera') {
-        if (computerOption === 'Piedra') {
+    else if(playerMove === 'tijera') {
+        if (computerOption === 'piedra') {
             resultado = "You lose"
-        } else if (computerOption === 'Papel') {
+        } else if (computerOption === 'papel') {
             resultado = "YOU WIN"
-        } else if (computerOption === 'Tijera') {
+        } else if (computerOption === 'tijera') {
             resultado = "Tie"
         }
     }
